@@ -1,5 +1,5 @@
 // // //
-// Card Traits
+// Basic Traits
 sealed trait CardSpeed
 case object SorcerySpeed extends CardSpeed
 case object InstantSpeed extends CardSpeed
@@ -8,9 +8,19 @@ sealed trait CardPermanence
 case object Permanent extends CardPermanence
 case object NonPermanent extends CardPermanence
 
+sealed trait SpellType
+case object Spell extends SpellType
+case object NonSpell extends SpellType
+
 sealed trait CardType
-case object NonSpell extends CardType
-case object Spell extends CardType
+case object Creature extends CardType
+case object Artifact extends CardType
+case object Enchantment extends CardType
+case object Planeswalker extends CardType
+case object Sorcery extends CardType
+case object Instant extends CardType
+
+
 
 
 // // //
